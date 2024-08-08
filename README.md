@@ -40,6 +40,7 @@ This project demonstrates how to implement authentication in a FastAPI applicati
 
 
 2. **Create and activate a virtual environment**:
+  ```bash
     python -m venv venv
 
 source venv/bin/activate  # On macOS/Linux
@@ -47,16 +48,16 @@ venv\Scripts\activate  # On Windows
 
 
 3. **Create and activate a virtual environment**:
-
+  ```bash
 pip install -r requirements.txt
 psql -U postgres -h localhost -d postgres -f sql/create_tables.sql
 
 
 4. **Configure the environment variables:**:
-
+  ```bash
 Create a .env file in the root directory of your project and add the following content. Make sure to replace your_password and your_secret_key with your actual PostgreSQL password and a secret key for JWT encoding.
 
 5. **Configure the environment variables:**:
-
+  ```bash
 uvicorn main:app --reload
 
