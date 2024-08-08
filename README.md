@@ -32,3 +32,16 @@
    ```bash
    git clone https://github.com/your-username/fastapi-authentication-with-jwt.git
    cd fastapi-authentication-with-jwt
+
+
+
+### Explanation
+
+- **Project Structure**: Provides an overview of the project directories and files.
+- **Description**: Details the authentication flow, including user creation, token generation, and protected routes.
+- **Installation**: Step-by-step instructions for setting up the project.
+- **Usage**: Instructions on how to interact with the API, including creating a user, generating a token, and accessing protected routes.
+- **API Endpoints**: Detailed descriptions of the API endpoints and their usage.
+- **License**: Information about the project's license.
+
+By following the instructions in the `README.md`, users should be able to set up, run, and interact with your FastAPI authentication application.
