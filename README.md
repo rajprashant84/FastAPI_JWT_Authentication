@@ -1,3 +1,10 @@
+# FastAPI Authentication with JWT
+
+This project demonstrates how to implement authentication in a FastAPI application using JWT tokens. The project includes user creation, token generation, and protected routes.
+
+## Project Structure
+
+
 
 ## Description
 
@@ -30,18 +37,26 @@
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/fastapi-authentication-with-jwt.git
-   cd fastapi-authentication-with-jwt
+   git clone https://github.com/rajprashant84/FastAPI_JWT_Authentication.git
+   cd fFastAPI_JWT_Authentication
 
 
 
-### Explanation
+### Create and activate a virtual environment:
 
-- **Project Structure**: Provides an overview of the project directories and files.
-- **Description**: Details the authentication flow, including user creation, token generation, and protected routes.
-- **Installation**: Step-by-step instructions for setting up the project.
-- **Usage**: Instructions on how to interact with the API, including creating a user, generating a token, and accessing protected routes.
-- **API Endpoints**: Detailed descriptions of the API endpoints and their usage.
-- **License**: Information about the project's license.
+python -m venv venv
 
-By following the instructions in the `README.md`, users should be able to set up, run, and interact with your FastAPI authentication application.
+source venv/bin/activate # On macOS/Linux:
+venv\Scripts\activate  # On Windows:
+
+
+## Install the dependencies:
+pip install -r requirements.txt
+psql -U postgres -h localhost -d postgres -f sql/create_tables.sql
+
+## Configure the environment variables:
+
+Create a .env file in the root directory of your project and add the following content. Make sure to replace your_password and your_secret_key with your actual PostgreSQL password and a secret key for JWT encoding.
+
+## Run the application:
+uvicorn main:app --reload
